@@ -1,0 +1,34 @@
+<%-include('partials/header');-%>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h2><a href="#">Contact Us</a></h2>
+								<p>
+									We'd love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. Our dedicated team is here to assist you and provide the information you need.
+								</p>
+							</header>
+							<a href="#" class="image featured"><img src="images/contact.jpg" alt="" /></a>
+							<p>
+								We value your input and are committed to ensuring your experience with Music Fest is exceptional. If you have any questions about the festival, ticketing, or general inquiries, our friendly support team is just a message away.
+							</p>
+							<form action="/contact" method="POST">
+							  <label for="name">Name:</label>
+							  <input type="text" id="name" name="name" required>
+
+							  <label for="email">Email:</label>
+							  <input type="email" id="email" name="email" required>
+
+							  <label for="message">Message:</label>
+							  <textarea id="message" name="message" rows="5" required></textarea><br>
+
+							  <button type="submit">Submit</button>
+							</form><br>
+
+						</article>
+						
+				</div>
+				<%-include('partials/footer');-%>

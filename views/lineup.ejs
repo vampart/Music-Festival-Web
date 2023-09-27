@@ -1,0 +1,123 @@
+<%-include('partials/header');-%>
+
+<!-- Banner -->
+<section id="banner">
+    <header>
+        <h2>Stellar Lineup <strong>Music Fest</strong>.</h2>
+        <p>
+            Brace yourself for an incredible lineup of renowned artists and emerging talents from diverse genres
+        </p>
+    </header>
+</section>
+
+<!-- Carousel -->
+<section class="carousel">
+    <div class="reel">
+
+        <article>
+            <a href="#" class="image featured"><img src="images/taylor.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Taylor Swift</a></h3>
+            </header>
+            <p>Brace yourself for a mesmerizing performance by Grammy-winning artist Taylor Swift.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/coldplay.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Coldplay</a></h3>
+            </header>
+            <p> Experience the euphoria of Coldplay's anthemic soundscapes and immersive live performances.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/kendrick.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Kendrick Lamar</a></h3>
+            </header>
+            <p>Get ready for a powerful and thought-provoking performance by acclaimed rapper Kendrick Lamar.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/billie.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Billie Eilish</a></h3>
+            </header>
+            <p>Immerse yourself in the unique sound and rebellious spirit of global sensation Billie Eilish.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/ed.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Ed Sheeran</a></h3>
+            </header>
+            <p>Sing along to the enchanting music and heartfelt ballads and infectious melodies of Ed Sheeran.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Pulvinar sagittis congue</a></h3>
+            </header>
+            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Fermentum sagittis proin</a></h3>
+            </header>
+            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Sed quis rhoncus placerat</a></h3>
+            </header>
+            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Ultrices urna sit lobortis</a></h3>
+            </header>
+            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+        </article>
+
+        <article>
+            <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+            <header>
+                <h3><a href="#">Varius magnis sollicitudin</a></h3>
+            </header>
+            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+        </article>
+
+    </div>
+</section>
+
+<section id="banner">
+    <div class="container">
+        <table>
+            <tr>
+              <th><strong>Artist Name</strong></th>
+              <th><strong>Date</strong></th>
+              <th><strong>Time</strong></th>
+              <th><strong>Venue</strong></th>
+            </tr>
+            <% lineup.forEach((artist) => { %>
+              <tr>
+                <td><%= artist.name %></td>
+                <td><%= artist.date %></td>
+                <td><%= artist.time %></td>
+                <td><%= artist.venue %></td>
+              </tr>
+            <% }); %>
+          </table>
+    </div>
+    
+
+</section>
+
+<%-include('partials/footer');-%>
